@@ -946,7 +946,7 @@ async def handle_search_input(update, context):
 
 if __name__ == '__main__':
 
-    app = Application.builder().token("").build()
+    app = Application.builder().token("ТУТ ВАШ ТОКЕН БОТА!").build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & filters.Regex("^(Начало|начало|глав|Глав|Главная|главная|Старт|старт|start)$"), start))
     app.add_handler(CallbackQueryHandler(start_button_callback,pattern="^(parent|Pbutton1|Pbutton2|sostav|otchet|Pbutton3|Pback|teacher|Tbutton1|search_date|search_theme|Tbutton2|Tbutton3|Tback|student|Sbutton1|Sbutton2|Sbutton3|UVO|USSO|Kalend|Sback|back)$"))
